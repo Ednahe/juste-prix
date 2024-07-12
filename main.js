@@ -4,6 +4,11 @@ const message = document.querySelector('.message');
 const counter = document.querySelector('.count');
 const historique = document.querySelector('.historique');
 const userInputKey = document.getElementById('1');
+const imgArray = ["./images/1.jpg", "./images/2.jpg", "./images/3.jpg", "./images/4.jpg", "./images/5.jpg", "./images/6.jpg"];
+const randomImg = document.getElementById('random-img');
+
+const randomImage = Math.floor(Math.random() * imgArray.length);
+randomImg.src = imgArray[randomImage];
 
 const randomNumber = Math.floor(Math.random() * 100) + 1;
 
