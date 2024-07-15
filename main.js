@@ -49,6 +49,10 @@ const activeTimer = () => {
         message.textContent = "Le temps est écoulé, vous avez échoué";
         const audio = document.getElementById('audio');
         audio.play();
+        setTimeout(() => {
+            audio.pause();
+            audio.currentTime = 0;
+        }, 6000);
     }
 }
 const intervalId = setInterval(activeTimer, 1000);

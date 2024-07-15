@@ -1,5 +1,70 @@
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: no-repeat center / cover radial-gradient(rgb(245, 191, 120), rgb(253, 144, 0));
+    padding: 10px;
+}
+h1 {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
 .container {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    width: 100%;
+    max-width: 850px;
+    min-width: 300px;
+    margin: 5rem auto;
+    padding: 25px;
+    background: #f1f1f1;
+    position: relative;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    border: 3px double orangered;
+    gap: 10px;
+}
+img {
+    height: 150px;
+    width: 150px;
+}
+p {
+    font-size: 1.2em;
+    color: #ff5733;
+}
+.message {
+    font-weight: bold;
+    color: #ff5733;
+}
+.user-interaction {
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 15px;
+    color: #ff5733;
+}
+.button-chek {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background: linear-gradient(45deg, #ff5733, #ffc300);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.button-chek:hover {
+    background: linear-gradient(45deg,#ffc300, #ff5733);
+}
+.historique {
+    list-style: none;
+    padding: 0;
+}
+.historique li {
+    font-size: 1.2em;
+    margin: 5px 0;
+    border-radius: 15px;
+    padding: 10px;
+    background: linear-gradient(45deg,#ffc300, #ff5733);
+    color: #fff;
+    text-align: left;
 }
